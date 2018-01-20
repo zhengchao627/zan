@@ -1,0 +1,118 @@
+html,body{
+	padding: 0;
+	margin: 0;
+	height: 100%;
+	width: 100%;
+}
+.wrap{
+	height: 100%;
+	background: -webkit-linear-gradient(left top, #9ec397, #968d88);
+	display:  flex;
+	justify-content: center;
+	align-items: center;
+}
+.box{
+	width: 500px;
+	height: 500px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	cursor: pointer;
+}
+.left{
+	width: 200px;
+	height: 180px;
+	background: #f0c1a7;
+	border-top: 3px solid #ad7e60;
+	transform: skewY(4deg);
+	position: relative;
+	z-index: 20;
+}
+.left::before{
+	content: '';
+	position: absolute;
+	left: 188px;
+	top: -122px;
+	z-index: 20;
+	width:130px;
+	height: 60px;
+	border-radius: 30px;
+	border:3px solid #ad7e60;
+	border-bottom: none;
+	border-left: none;
+	background: #f0c1a7;
+	transform: rotateZ(-65deg);
+	border-top-left-radius: 0;
+}
+.left::after{
+	content: '';
+	position: absolute;
+	left: 238px;
+	top: -143px;
+	z-index: 30;
+	width:60px;
+	height: 52px;
+	border-radius: 0 26px 26px 0;
+	border-left: none;
+	background: -webkit-linear-gradient(right, #f2dad6, #f5bfa7);
+	transform: rotateZ(-65deg);
+}
+.middle{
+	width: 200px;
+	height: 251px;
+	background: #f0c1a7;
+	margin-left: -20px;
+	border-radius: 20px;
+	border: 3px solid #ad7e60;
+	border-bottom: none; 
+	position: relative;
+}
+.left div{
+	position: absolute;
+	left: 230px;
+	top: -94px;
+	width: 30px;
+	height: 52px;
+	z-index: 30;
+	transform: rotateZ(-65deg);
+	background: -webkit-linear-gradient(right, #e69f78, #f5bfa7);
+	border-radius: 0 26px 26px 0;
+}
+.middle::before{
+	content: '';
+	position: absolute;
+	right: 0;
+	top: 0;
+	width: 80px;
+	height: 62px;
+	background: #f0c1a7;
+	border-radius: 0 31px 31px 0;
+	box-shadow: 60px 0 0 #f0c1a7,63px -3px 0 #ad7e60,
+					60px 63px 0 #f0c1a7,63px 60px 0 #ad7e60,
+					60px 126px 0 #f0c1a7,63px 123px 0 #ad7e60,
+					60px 189px 0 #f0c1a7,63px 186px 0 #ad7e60;
+}
+.middle::after{
+	content: '';
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 30px;
+	height: 52px;
+	background: #f0c1a7;
+	border-radius: 0 26px 26px 0;
+	box-shadow: 56px 5px 6px #f2dad6,
+					56px 68px 6px #f2dad6,
+					56px 130px 6px #f2dad6,
+					56px 194px 6px #f2dad6;
+}
+.num{
+	position: absolute;
+	left: 54%;
+	top: 40%;
+	font-size: 100px;
+	color: #ff5500;
+}
+
+
+
